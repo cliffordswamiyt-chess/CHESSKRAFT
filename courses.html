@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - ChessKraft</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="courses.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="chess-piece-anim piece-1">♛</div>
+        <div class="chess-piece-anim piece-2">♞</div>
+        <div class="chess-piece-anim piece-3">♝</div>
+        <div class="chess-piece-anim piece-4">♜</div>
+        <div class="floating-pawns">
+            <span>♙</span><span>♙</span><span>♙</span><span>♙</span><span>♙</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <i class="fas fa-chess-knight logo-icon"></i>
+                    <span class="logo-text">Chess<span class="logo-accent">Kraft</span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="courses.html" class="nav-link active">Courses</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="demo.html" class="nav-link btn-nav">Free Demo</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Courses Hero Section -->
+    <section class="courses-hero">
+        <div class="container">
+            <div class="courses-hero-content">
+                <h1 class="courses-hero-title">Master Chess with Our Courses</h1>
+                <p class="courses-hero-subtitle">Comprehensive curriculum designed for all levels - from complete beginners to tournament champions</p>
+                <div class="hero-features">
+                    <div class="feature">
+                        <i class="fas fa-user-graduate"></i>
+                        <span>Certified Coaches</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>Interactive Platform</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Progress Tracking</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Categories -->
+    <section class="course-categories">
+        <div class="container">
+            <h2 class="section-title">Choose Your Learning Path</h2>
+            <p class="section-subtitle">Select the course that matches your current skill level and goals</p>
+            
+            <div class="categories-grid">
+                <div class="category-card" data-category="beginner">
+                    <div class="category-icon">
+                        <i class="fas fa-chess-pawn"></i>
+                    </div>
+                    <h3>Beginner</h3>
+                    <p>Start your chess journey from scratch</p>
+                    <div class="category-stats">
+                        <span>Age: 5-8 years</span>
+                        <span>Duration: 8 weeks</span>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="intermediate">
+                    <div class="category-icon">
+                        <i class="fas fa-chess-knight"></i>
+                    </div>
+                    <h3>Intermediate</h3>
+                    <p>Build on your foundation and develop strategy</p>
+                    <div class="category-stats">
+                        <span>Age: 9-12 years</span>
+                        <span>Duration: 12 weeks</span>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="advanced">
+                    <div class="category-icon">
+                        <i class="fas fa-chess-queen"></i>
+                    </div>
+                    <h3>Advanced</h3>
+                    <p>Master complex strategies and tournament play</p>
+                    <div class="category-stats">
+                        <span>Age: 13+ years</span>
+                        <span>Duration: 16 weeks</span>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="tournament">
+                    <div class="category-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Tournament Prep</h3>
+                    <p>Specialized training for competitive play</p>
+                    <div class="category-stats">
+                        <span>All Ages</span>
+                        <span>Flexible Duration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Grid -->
+    <section class="courses-grid-section">
+        <div class="container">
+            <h2 class="section-title">All Courses</h2>
+            <p class="section-subtitle">Browse our complete course catalog and find the perfect fit for your chess journey</p>
+            
+            <div class="courses-filter">
+                <button class="filter-btn active" data-filter="all">All Courses</button>
+                <button class="filter-btn" data-filter="beginner">Beginner</button>
+                <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+                <button class="filter-btn" data-filter="advanced">Advanced</button>
+                <button class="filter-btn" data-filter="tournament">Tournament</button>
+            </div>
+            
+            <div class="courses-container">
+                <!-- Beginner Courses -->
+                <div class="course-card beginner" data-category="beginner">
+                    <div class="course-header">
+                        <div class="course-badge beginner">Beginner</div>
+                        <div class="course-icon">
+                            <i class="fas fa-chess-pawn"></i>
+                        </div>
+                    </div>
+                    <h3>Chess Fundamentals</h3>
+                    <p class="course-description">Learn the basics of chess including piece movements, basic rules, and simple strategies.</p>
+                    <div class="course-details">
+                        <div class="detail">
+                            <i class="fas fa-clock"></i>
+                            <span>8 weeks</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-user-friends"></i>
+                            <span>2 sessions/week</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Beginner Level</span>
+                        </div>
+                    </div>
+                    <ul class="course-features">
+                        <li>Piece movements and values</li>
+                        <li>Basic checkmates</li>
+                        <li>Simple tactics</li>
+                        <li>Opening principles</li>
+                        <li>Interactive puzzles</li>
+                    </ul>
+                    <div class="course-price">
+                        <span class="price">Request For Call</span>
+                        <span class="period">/course</span>
+                    </div>
+                    <div class="course-actions">
+                        <a href="demo.html" class="btn btn-primary">Enroll Now</a>
+                        <button class="btn btn-outline course-info">Learn More</button>
+                    </div>
+                </div>
+                
+                <div class="course-card beginner" data-category="beginner">
+                    <div class="course-header">
+                        <div class="course-badge beginner">Beginner</div>
+                        <div class="course-icon">
+                            <i class="fas fa-chess-board"></i>
+                        </div>
+                    </div>
+                    <h3>Fun with Chess</h3>
+                    <p class="course-description">Engaging course for young beginners focusing on fun while learning chess fundamentals.</p>
+                    <div class="course-details">
+                        <div class="detail">
+                            <i class="fas fa-clock"></i>
+                            <span>6 weeks</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-user-friends"></i>
+                            <span>1 session/week</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Kids 5-8 years</span>
+                        </div>
+                    </div>
+                    <ul class="course-features">
+                        <li>Story-based learning</li>
+                        <li>Colorful chess sets</li>
+                        <li>Game-based activities</li>
+                        <li>Parent involvement</li>
+                        <li>Progress certificates</li>
+                    </ul>
+                    <div class="course-price">
+                        <span class="price">Request For Call</span>
+                        <span class="period">/course</span>
+                    </div>
+                    <div class="course-actions">
+                        <a href="demo.html" class="btn btn-primary">Enroll Now</a>
+                        <button class="btn btn-outline course-info">Learn More</button>
+                    </div>
+                </div>
+                
+                <!-- Intermediate Courses -->
+                <div class="course-card intermediate" data-category="intermediate">
+                    <div class="course-header">
+                        <div class="course-badge intermediate">Intermediate</div>
+                        <div class="course-icon">
+                            <i class="fas fa-chess-knight"></i>
+                        </div>
+                    </div>
+                    <h3>Tactics Mastery</h3>
+                    <p class="course-description">Develop your tactical vision and learn to spot combinations in your games.</p>
+                    <div class="course-details">
+                        <div class="detail">
+                            <i class="fas fa-clock"></i>
+                            <span>10 weeks</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-user-friends"></i>
+                            <span>3 sessions/week</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Intermediate Level</span>
+                        </div>
+                    </div>
+                    <ul class="course-features">
+                        <li>Fork, pin, and skewer tactics</li>
+                        <li>Discovered attacks</li>
+                        <li>Double checks</li>
+                        <li>Deflection techniques</li>
+                        <li>500+ tactical puzzles</li>
+                    </ul>
+                    <div class="course-price">
+                        <span class="price">Request For Call</span>
+                        <span class="period">/course</span>
+                    </div>
+                    <div class="course-actions">
+                        <a href="demo.html" class="btn btn-primary">Enroll Now</a>
+                        <button class="btn btn-outline course-info">Learn More</button>
+                    </div>
+                </div>
+                
+                <div class="course-card intermediate" data-category="intermediate">
+                    <div class="course-header">
+                        <div class="course-badge intermediate">Intermediate</div>
+                        <div class="course-icon">
+                            <i class="fas fa-chess-rook"></i>
+                        </div>
+                    </div>
+                    <h3>Strategic Play</h3>
+                    <p class="course-description">Learn positional concepts and strategic planning to outplay your opponents.</p>
+                    <div class="course-details">
+                        <div class="detail">
+                            <i class="fas fa-clock"></i>
+                            <span>12 weeks</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-user-friends"></i>
+                            <span>3 sessions/week</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Intermediate Level</span>
+                        </div>
+                    </div>
+                    <ul class="course-features">
+                        <li>Pawn structure principles</li>
+                        <li>Piece activity and coordination</li>
+                        <li>Space advantage</li>
+                        <li>Weak square strategy</li>
+                        <li>Strategic planning exercises</li>
+                    </ul>
+                    <div class="course-price">
+                        <span class="price">Request For Call</span>
+                        <span class="period">/course</span>
+                    </div>
+                    <div class="course-actions">
+                        <a href="demo.html" class="btn btn-primary">Enroll Now</a>
+                        <button class="btn btn-outline course-info">Learn More</button>
+                    </div>
+                </div>
+                
+                <!-- Advanced Courses -->
+                <div class="course-card advanced" data-category="advanced">
+                    <div class="course-header">
+                        <div class="course-badge advanced">Advanced</div>
+                        <div class="course-icon">
+                            <i class="fas fa-chess-queen"></i>
+                        </div>
+                    </div>
+                    <h3>Advanced Strategy</h3>
+                    <p class="course-description">Master complex strategic concepts and learn from grandmaster games.</p>
+                    <div class="course-details">
+                        <div class="detail">
+                            <i class="fas fa-clock"></i>
+                            <span>16 weeks</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-user-friends"></i>
+                            <span>4 sessions/week</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Advanced Level</span>
+                        </div>
+                    </div>
+                    <ul class="course-features">
+                        <li>Prophylactic thinking</li>
+                        <li>Strategic exchange sacrifices</li>
+                        <li>Positional pawn breaks</li>
+                        <li>Grandmaster game analysis</li>
+                        <li>One-on-one coaching sessions</li>
+                    </ul>
+                    <div class="course-price">
+                        <span class="price">Request For Call</span>
+                        <span class="period">/course</span>
+                    </div>
+                    <div class="course-actions">
+                        <a href="demo.html" class="btn btn-primary">Enroll Now</a>
+                        <button class="btn btn-outline course-info">Learn More</button>
+                    </div>
+                </div>
+                
+                <!-- Tournament Courses -->
+                <div class="course-card tournament" data-category="tournament">
+                    <div class="course-header">
+                        <div class="course-badge tournament">Tournament</div>
+                        <div class="course-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                    </div>
+                    <h3>Tournament Preparation</h3>
+                    <p class="course-description">Comprehensive preparation for chess tournaments at all levels.</p>
+                    <div class="course-details">
+                        <div class="detail">
+                            <i class="fas fa-clock"></i>
+                            <span>Flexible</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-user-friends"></i>
+                            <span>Custom schedule</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>All Levels</span>
+                        </div>
+                    </div>
+                    <ul class="course-features">
+                        <li>Opening repertoire development</li>
+                        <li>Time management strategies</li>
+                        <li>Psychological preparation</li>
+                        <li>Mock tournament simulations</li>
+                        <li>Post-game analysis sessions</li>
+                    </ul>
+                    <div class="course-price">
+                        <span class="price">Custom</span>
+                        <span class="period">Pricing</span>
+                    </div>
+                    <div class="course-actions">
+                        <a href="demo.html" class="btn btn-primary">Get Quote</a>
+                        <button class="btn btn-outline course-info">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Gallery -->
+    <section class="course-gallery">
+        <div class="container">
+            <h2 class="section-title">Learning in Action</h2>
+            <p class="section-subtitle">See our students engaged in various learning activities and chess exercises</p>
+            
+            <div class="gallery-container">
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-video"></i>
+                                <span>Live Coaching Session</span>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">One-on-one coaching with expert instructors</div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <span>Tactics Training</span>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">Students solving complex chess puzzles</div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-users"></i>
+                                <span>Group Analysis</span>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">Group analysis of master games</div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-gamepad"></i>
+                                <span>Interactive Lessons</span>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">Engaging interactive lesson sessions</div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-tasks"></i>
+                                <span>Progress Tracking</span>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">Students monitoring their progress dashboards</div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-award"></i>
+                                <span>Achievement Celebration</span>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">Celebrating student milestones and achievements</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <h2 class="section-title">Simple, Transparent Pricing</h2>
+            <p class="section-subtitle">Choose the plan that works best for your learning journey</p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Basic Plan</h3>
+                        <div class="price">
+                            <span class="amount">Request For Call</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Access to basic course materials</li>
+                        <li>Weekly group sessions</li>
+                        <li>Email support</li>
+                        <li>Progress tracking</li>
+                        <li class="excluded">One-on-one coaching</li>
+                        <li class="excluded">Tournament preparation</li>
+                    </ul>
+                    <a href="demo.html" class="btn btn-outline">Start Basic</a>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Pro Plan</h3>
+                        <div class="price">
+                            <span class="amount">Request For Call</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>All basic features</li>
+                        <li>Two one-on-one sessions/month</li>
+                        <li>Priority email support</li>
+                        <li>Advanced analytics</li>
+                        <li>Tournament preparation</li>
+                        <li>Certificate of completion</li>
+                    </ul>
+                    <a href="demo.html" class="btn btn-primary">Go Pro</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Elite Plan</h3>
+                        <div class="price">
+                            <span class="amount">Request For Call</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>All pro features</li>
+                        <li>Weekly one-on-one coaching</li>
+                        <li>24/7 priority support</li>
+                        <li>Custom training plan</li>
+                        <li>Tournament entry support</li>
+                        <li>Master class workshops</li>
+                    </ul>
+                    <a href="demo.html" class="btn btn-outline">Go Elite</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="courses-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Start Your Chess Mastery Journey Today</h2>
+                <p>Join thousands of students who have transformed their game with ChessKraft courses</p>
+                <div class="cta-buttons">
+                    <a href="demo.html" class="btn btn-primary">Book Free Demo</a>
+                    <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-chess-knight logo-icon"></i>
+                        <span class="logo-text">Chess<span class="logo-accent">Kraft</span></span>
+                    </div>
+                    <p>Elevating chess players worldwide with cutting-edge technology and personalized training approaches.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="demo.html">Book Demo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Chess Lessons</a></li>
+                        <li><a href="#">Puzzle Database</a></li>
+                        <li><a href="#">Opening Explorer</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 ChessKraft. All rights reserved. | Elevate Your Chess Game</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="courses.js"></script>
+</body>
+</html>

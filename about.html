@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ChessKraft</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="chess-piece-anim piece-1">♛</div>
+        <div class="chess-piece-anim piece-2">♞</div>
+        <div class="chess-piece-anim piece-3">♝</div>
+        <div class="chess-piece-anim piece-4">♜</div>
+        <div class="floating-pawns">
+            <span>♙</span><span>♙</span><span>♙</span><span>♙</span><span>♙</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <i class="fas fa-chess-knight logo-icon"></i>
+                    <span class="logo-text">Chess<span class="logo-accent">Kraft</span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link active">About</a></li>
+                    <li><a href="courses.html" class="nav-link">Courses</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="demo.html" class="nav-link btn-nav">Free Demo</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="about-hero-content">
+                <h1 class="about-hero-title">Our Chess Journey</h1>
+                <p class="about-hero-subtitle">Transforming chess education through innovation, passion, and cutting-edge technology</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number" data-count="5">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="50">0</div>
+                        <div class="stat-label">Expert Coaches</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="10000">0</div>
+                        <div class="stat-label">Students Trained</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="our-story">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-text">
+                    <h2>Our Story</h2>
+                    <p>ChessKraft was born from a simple belief: every child deserves access to world-class chess education. Founded in 2018 by Grandmaster Alexei Petrov and educational technologist Sarah Chen, we've been on a mission to make chess accessible, engaging, and transformative for learners of all ages.</p>
+                    <p>What started as a small coaching program in New York has grown into a global platform serving thousands of students across 50+ countries. Our unique blend of traditional chess wisdom and modern technology has revolutionized how chess is taught and learned.</p>
+                    <div class="story-features">
+                        <div class="feature">
+                            <i class="fas fa-bullseye"></i>
+                            <h4>Our Mission</h4>
+                            <p>To empower minds through chess, developing critical thinking and creativity in the next generation.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-eye"></i>
+                            <h4>Our Vision</h4>
+                            <p>A world where chess education is accessible to every child, regardless of background or location.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-handshake"></i>
+                            <h4>Our Values</h4>
+                            <p>Excellence, innovation, accessibility, and the lifelong love of learning through chess.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-visual">
+                    <div class="story-chessboard">
+                        <div class="chessboard" id="story-chessboard"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2 class="section-title">Meet Our Master Coaches</h2>
+            <p class="section-subtitle">Learn from the best in the business - our certified coaches bring years of tournament experience and teaching expertise</p>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <div class="photo-placeholder">
+                            <i class="fas fa-chess-king"></i>
+                        </div>
+                        <div class="member-badge">OWNER</div>
+                    </div>
+                    <h3>CLIFFORD SWAMI</h3>
+                    <div class="member-title">Founder</div>
+                    <p>Former Russian Champion with 20+ years of teaching experience. Specializes in advanced strategy and tournament preparation.</p>
+                    <div class="member-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span>Rating: 2650</span>
+                    </div>
+                </div>
+                
+                <div class="team-member ">
+                    <div class="member-photo">
+                        <div class="photo-placeholder">
+                            <i class="fas fa-chess-queen"></i>
+                        </div>
+                        <div class="member-badge">WGM</div>
+                    </div>
+                    <h3>Sarah Chen</h3>
+                    <div class="member-title">Women's Grandmaster & Co-Founder</div>
+                    <p>Educational technology expert and former US Women's Champion. Focuses on beginner and intermediate development.</p>
+                    <div class="member-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span>Rating: 2480</span>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo">
+                        <div class="photo-placeholder">
+                            <i class="fas fa-chess-knight"></i>
+                        </div>
+                        <div class="member-badge">IM</div>
+                    </div>
+                    <h3>David Rodriguez</h3>
+                    <div class="member-title">International Master</div>
+                    <p>Youth chess specialist with a passion for making chess fun and accessible for children of all ages.</p>
+                    <div class="member-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span>Rating: 2450</span>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo">
+                        <div class="photo-placeholder">
+                            <i class="fas fa-chess-bishop"></i>
+                        </div>
+                        <div class="member-badge">FM</div>
+                    </div>
+                    <h3>Maria Gonzalez</h3>
+                    <div class="member-title">FIDE Master</div>
+                    <p>Tactics and puzzle specialist. Creates engaging learning materials that challenge and inspire students.</p>
+                    <div class="member-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span>Rating: 2300</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">ChessKraft in Action</h2>
+            <p class="section-subtitle">See our students learning, competing, and growing through the game of chess</p>
+            
+            <div class="gallery-container">
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-chess-board"></i>
+                                <span>Online Lesson Session</span>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">Interactive online coaching session</div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-trophy"></i>
+                                <span>Tournament Winners</span>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">Our students celebrating tournament victories</div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-users"></i>
+                                <span>Group Workshop</span>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">Group learning workshop in progress</div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Certificate Ceremony</span>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">Students receiving completion certificates</div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <span>Puzzle Competition</span>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">Students competing in puzzle-solving challenges</div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-child"></i>
+                                <span>Young Champions</span>
+                            </div>
+                        </div>
+                        <div class="gallery-caption">Our youngest students showing their skills</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements-section">
+        <div class="container">
+            <h2 class="section-title">Our Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="achievement-number" data-count="121">0</div>
+                    <div class="achievement-label">Tournament Wins</div>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="achievement-number" data-count="3">0</div>
+                    <div class="achievement-label">National Champions</div>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="achievement-number" data-count="98">0</div>
+                    <div class="achievement-label">Success Rate</div>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="achievement-number" data-count="50">0</div>
+                    <div class="achievement-label">Countries Reached</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="about-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Join Our Chess Family?</h2>
+                <p>Become part of our growing community of chess enthusiasts and start your journey today</p>
+                <div class="cta-buttons">
+                    <a href="demo.html" class="btn btn-primary">Book Free Demo</a>
+                    <a href="courses.html" class="btn btn-secondary">View Courses</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-chess-knight logo-icon"></i>
+                        <span class="logo-text">Chess<span class="logo-accent">Kraft</span></span>
+                    </div>
+                    <p>Elevating chess players worldwide with cutting-edge technology and personalized training approaches.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="demo.html">Book Demo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Chess Lessons</a></li>
+                        <li><a href="#">Puzzle Database</a></li>
+                        <li><a href="#">Opening Explorer</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 ChessKraft. All rights reserved. | Elevate Your Chess Game</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="about.js"></script>
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChessKraft - Master Chess Like Never Before</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="chess-piece-anim piece-1">♛</div>
+        <div class="chess-piece-anim piece-2">♞</div>
+        <div class="chess-piece-anim piece-3">♝</div>
+        <div class="chess-piece-anim piece-4">♜</div>
+        <div class="chess-piece-anim piece-5">♟</div>
+        <div class="floating-pawns">
+            <span>♙</span><span>♙</span><span>♙</span><span>♙</span><span>♙</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <i class="fas fa-chess-knight logo-icon"></i>
+                    <span class="logo-text">Chess<span class="logo-accent">Kraft</span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="courses.html" class="nav-link">Courses</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="demo.html" class="nav-link btn-nav">Free Demo</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Master Chess</span>
+                        <span class="title-line accent">Like Never Before</span>
+                    </h1>
+                    <p class="hero-description">Join thousands of players worldwide improving their game with ChessKraft's AI-powered coaching, personalized training, and competitive tournaments.</p>
+                    <div class="hero-buttons">
+                        <a href="demo.html" class="btn btn-primary">Start Free Trial</a>
+                        <a href="#features" class="btn btn-secondary">Learn More</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number" data-count="500">0</div>
+                            <div class="stat-label">Active Players</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-count="98">0</div>
+                            <div class="stat-label">Success Rate</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-count="10">0</div>
+                            <div class="stat-label">Tournaments</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-chessboard">
+                        <div class="chessboard" id="hero-chessboard"></div>
+                    </div>
+                    <div class="hero-pieces">
+                        <div class="hero-piece king">♔</div>
+                        <div class="hero-piece queen">♕</div>
+                        <div class="hero-piece bishop">♗</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose ChessKraft?</h2>
+                <p class="section-subtitle">Discover what makes our platform the perfect choice for chess enthusiasts of all levels</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI-Powered Analysis</h3>
+                    <p>Advanced chess engine analyzes your games and identifies improvement areas with pinpoint accuracy.</p>
+                    <div class="feature-anim">
+                        <div class="analysis-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Personalized Training</h3>
+                    <p>Custom training plans based on your skill level, playing style, and specific improvement goals.</p>
+                    <div class="feature-anim">
+                        <div class="progress-ring"></div>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Daily Tournaments</h3>
+                    <p>Compete in daily tournaments with players at your level and climb the global leaderboard.</p>
+                    <div class="feature-anim">
+                        <div class="trophy-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Preview -->
+    <section class="courses-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Popular Courses</h2>
+                <p class="section-subtitle">Comprehensive chess curriculum designed for all age groups and skill levels</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-badge">Beginner</div>
+                    <div class="course-icon">
+                        <i class="fas fa-chess-pawn"></i>
+                    </div>
+                    <h3>Beginner Program</h3>
+                    <p>Perfect for those just starting their chess journey</p>
+                    <ul class="course-features">
+                        <li>Basic rules and piece movements</li>
+                        <li>Simple checkmates and tactics</li>
+                        <li>Fun interactive lessons</li>
+                    </ul>
+                    <a href="courses.html" class="btn btn-course">Explore</a>
+                </div>
+                <div class="course-card">
+                    <div class="course-badge">Intermediate</div>
+                    <div class="course-icon">
+                        <i class="fas fa-chess-knight"></i>
+                    </div>
+                    <h3>Intermediate Program</h3>
+                    <p>Take your skills to the next level</p>
+                    <ul class="course-features">
+                        <li>Advanced tactics and strategies</li>
+                        <li>Opening principles</li>
+                        <li>Endgame techniques</li>
+                    </ul>
+                    <a href="courses.html" class="btn btn-course">Explore</a>
+                </div>
+                <div class="course-card">
+                    <div class="course-badge">Advanced</div>
+                    <div class="course-icon">
+                        <i class="fas fa-chess-queen"></i>
+                    </div>
+                    <h3>Advanced Program</h3>
+                    <p>Master-level training for serious players</p>
+                    <ul class="course-features">
+                        <li>Complex opening repertoires</li>
+                        <li>Tournament preparation</li>
+                        <li>One-on-one coaching</li>
+                    </ul>
+                    <a href="courses.html" class="btn btn-course">Explore</a>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="courses.html" class="btn btn-outline">View All Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <div class="benefits-content">
+                <div class="benefits-text">
+                    <h2 class="section-title">Why Chess for Kids?</h2>
+                    <p class="section-subtitle">Beyond the game - developing essential life skills through chess</p>
+                    
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>Cognitive Development</h4>
+                                <p>Enhances memory, problem-solving skills, and critical thinking abilities.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>Creativity & Imagination</h4>
+                                <p>Develops innovative strategies and visual thinking for complex situations.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>Academic Improvement</h4>
+                                <p>Better performance in mathematics, reading, and logical reasoning.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefits-visual">
+                    <div class="stats-card">
+                        <h3>Proven Results</h3>
+                        <div class="stat-bar">
+                            <div class="stat-label">Math Improvement</div>
+                            <div class="stat-progress">
+                                <div class="progress-fill" data-width="87"></div>
+                                <span class="stat-percent">87%</span>
+                            </div>
+                        </div>
+                        <div class="stat-bar">
+                            <div class="stat-label">Memory Enhancement</div>
+                            <div class="stat-progress">
+                                <div class="progress-fill" data-width="94"></div>
+                                <span class="stat-percent">94%</span>
+                            </div>
+                        </div>
+                        <div class="stat-bar">
+                            <div class="stat-label">Focus Increase</div>
+                            <div class="stat-progress">
+                                <div class="progress-fill" data-width="78"></div>
+                                <span class="stat-percent">78%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Chess Journey?</h2>
+                <p>Join thousands of players who have transformed their game with ChessKraft</p>
+                <div class="cta-buttons">
+                    <a href="demo.html" class="btn btn-primary">Book Free Demo</a>
+                    <a href="courses.html" class="btn btn-secondary">Explore Courses</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-chess-knight logo-icon"></i>
+                        <span class="logo-text">Chess<span class="logo-accent">Kraft</span></span>
+                    </div>
+                    <p>Elevating chess players worldwide with cutting-edge technology and personalized training approaches.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="demo.html">Book Demo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Chess Lessons</a></li>
+                        <li><a href="#">Puzzle Database</a></li>
+                        <li><a href="#">Opening Explorer</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 ChessKraft. All rights reserved. | Elevate Your Chess Game</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="animations.js"></script>
+</body>
+</html>
